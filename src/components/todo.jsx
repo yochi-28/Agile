@@ -15,7 +15,7 @@ export default function todo(){
     }
     return(
         <div>
-            <h3 class="font-bold text-5xl pl-5">Todo List App &hearts;</h3>
+            <h2 class="font-bold text-4xl italic">Todo List App&#9829;</h2>
             <AddForm/>
         <ul>
             {todos.map((todo)=>(
