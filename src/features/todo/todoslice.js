@@ -22,7 +22,11 @@ export const todoslice = createSlice({
         markAdDone: (state,action)=>{
             state.todos.map((todo)=>{
                 if(todo.id === action.payload){
-                    todo.isdone = true;
+                    if(todo.isdone == false){
+                        todo.isdone = true;
+                    }else{
+                        todo.isdone = false;
+                    }    
                 }
             })
         },
