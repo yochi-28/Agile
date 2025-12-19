@@ -16,7 +16,7 @@ export default function addForm(){
     }
 
     return(
-        <div>
+        <div class="pt-6">
             <form onSubmit={submitHandler}>
                    <TextField onChange={(e)=> setTask(e.target.value)} value={task} id="standard-basic" label="add task" variant="standard" /> &nbsp;&nbsp;&nbsp;&nbsp;
                         <Button type="submit" variant="contained" endIcon={<SendIcon />}>
